@@ -1,3 +1,4 @@
 flask
 numerize
 gunicorn
+requests

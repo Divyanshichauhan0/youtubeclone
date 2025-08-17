@@ -1,0 +1,20 @@
+{% macro card(first_video) -%}
+<div class="card">
+<div class="thumbnailContainer">
+  <img src="{{ first_video['richThumbnail'][0]['url']}}" alt ="link" class="thumbnail"/>
+</div>
+  <div class='infoContainer'>
+    <div class='channelLogoContainer'>
+      <img src="https://tse4.mm.bing.net/th/id/OIP.RruDXshoJIJzhiK0GAs9EwHaEK?pid=Api&P=0&h=180" alt="channel" class="channelLogo"
+/>
+    </div>
+    <div class ='info'>
+      <p>{{ first_video['title'] }} </p>
+      <span>Clever Programmer</span><br>
+      <span>{{ first_video['viewCountText'] | numberize }} • {{ first_video['publishedTimeText'] }}</span>
+    </div>
+  </div>
+</div>
+{%- endmacro %}
+
+

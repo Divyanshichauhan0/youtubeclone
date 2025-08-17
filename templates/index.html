@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Youtube Clone</title>
+    <link rel="stylesheet" href="./static/style.css"/>
+</head>
+<body>
+{#     <h2>{{ item }}</h2>#}
+{% from 'components.html' import card %}
+<link rel="stylesheet" href="./static/styles.css">
+<div id="home">
+{% for first_video in contents %}
+{{ card(first_video)}}
+{% endfor %}
+</div>
+
+</body>
+</html>
